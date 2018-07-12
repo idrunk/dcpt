@@ -1,0 +1,109 @@
+{
+    "apps" : [
+        {
+            "name" : "微窝房产",
+            "frontend" : {
+                "root" : "/Volumes/App/sale-app-vue",
+                "dist" : "./dist",
+                "vcs" : {
+                    "pull" : "git pull",
+                    "checkout" : [
+                        "git reset --hard head",
+                        "git checkout develop"
+                    ]
+                },
+                "conf" : {
+                    "path" : "./src/config/index.js",
+                    "production" : "weiwo.info",
+                    "development" : "192.168.1.2:9001"
+                },
+                "npm" : {
+                    "build" : "npm run build"
+                }
+            },
+            "cordova" : {
+                "ios" : {
+                    "root" : "/App/weiwo-fangchan",
+                    "build_config" : "./build.json",
+                    "is_semi_automatic" : 0,
+                    "output" : {
+                        "release" : "./platforms/ios/build/device",
+                        "semi_automatic" : "/Users/drunk/Documents/#app",
+                        "export" : "/Volumes/F/App/Weiwo/web/public/temp/app/debug/fangchan/app.ipa",
+                        "distribute" : "/Users/drunk/Library/Developer/Xcode/Archives"
+                    }
+                }
+            }
+        },
+        {
+            "name" : "微窝房源",
+            "frontend" : {
+                "root" : "/Volumes/App/toker-app-vue",
+                "dist" : "./dist",
+                "vcs" : {
+                    "pull" : "git pull",
+                    "checkout" : [
+                        "git reset --hard head",
+                        "git checkout develop"
+                    ]
+                },
+                "conf" : {
+                    "path" : "./src/config/index.js",
+                    "production" : "weiwo.info",
+                    "development" : "192.168.1.2:9001"
+                },
+                "npm" : {
+                    "build" : "npm run build"
+                }
+            },
+            "cordova" : {
+                "ios" : {
+                    "root" : "/App/weiwo-tuoke",
+                    "build_config" : "./build.json",
+                    "is_semi_automatic" : 0,
+                    "output" : {
+                        "release" : "./platforms/ios/build/device",
+                        "semi_automatic" : "/Users/drunk/Documents/#app",
+                        "export" : "/Volumes/F/App/Weiwo/web/public/temp/app/debug/fangyuan/app.ipa",
+                        "distribute" : "/Users/drunk/Library/Developer/Xcode/Archives"
+                    }
+                }
+            }
+        },
+        {
+            "name" : "微窝外拓",
+            "frontend" : {
+                "root" : "/Volumes/App/waituo-app-vue",
+                "dist" : "./dist",
+                "vcs" : {
+                    "pull" : "git pull",
+                    "checkout" : [
+                        "git reset --hard head",
+                        "git checkout develop"
+                    ]
+                },
+                "conf" : {
+                    "path" : "./src/config/index.js",
+                    "production" : "weiwo.info",
+                    "development" : "192.168.1.2:9001"
+                },
+                "npm" : {
+                    "build" : "npm run build"
+                }
+            },
+            "cordova" : {
+                "ios" : {
+                    "root" : "/App/weiwo-waituo",
+                    "build_config" : "./build.json",
+                    "is_semi_automatic" : 0,
+                    "output" : {
+                        "release" : "./platforms/ios/build/device",
+                        "semi_automatic" : "/Users/drunk/Documents/#app",
+                        "export" : "/Volumes/F/App/Weiwo/web/public/temp/app/debug/waituo/app.ipa",
+                        "distribute" : "/Users/drunk/Library/Developer/Xcode/Archives"
+                    }
+                }
+            }
+        }
+    ]
+}

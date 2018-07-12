@@ -1,0 +1,121 @@
+{
+    "apps" : [
+        {
+            "name" : "微窝房产",
+            "frontend" : {
+                "root" : "F:/App/sale-app-vue",
+                "dist" : "./dist",
+                "vcs" : {
+                    "pull" : "git pull",
+                    "checkout" : [
+                        "git reset --hard head",
+                        "git checkout develop"
+                    ]
+                },
+                "conf" : {
+                    "path" : "./src/config/index.js",
+                    "production" : "weiwo.info",
+                    "development" : "192.168.1.2:9001"
+                },
+                "npm" : {
+                    "build" : "npm run build"
+                }
+            },
+            "cordova" : {
+                "android" : {
+                    "root" : "F:/App/#package/weiwo-fangchan",
+                    "keystore" : {
+                        "path" : "./weiwo-fangchan.keystore",
+                        "store_password" : "123456",
+                        "password" : "123456",
+                        "alias" : "weiwo"
+                    },
+                    "output" : {
+                        "release" : "./platforms/android/build/outputs/apk/release/android-release.apk",
+                        "debug" : "./platforms/android/build/outputs/apk/debug/android-debug.apk",
+                        "export" : "X:/App/Weiwo/web/public/temp/app/debug/fangchan/app.apk",
+                        "distribute" : "F:/App/#release/#app/fangchan.apk"
+                    }
+                }
+            }
+        },
+        {
+            "name" : "微窝房源",
+            "frontend" : {
+                "root" : "F:/App/toker-app-vue",
+                "dist" : "./dist",
+                "vcs" : {
+                    "pull" : "git pull",
+                    "checkout" : [
+                        "git reset --hard head",
+                        "git checkout develop"
+                    ]
+                },
+                "conf" : {
+                    "path" : "./src/config/index.js",
+                    "production" : "weiwo.info",
+                    "development" : "192.168.1.2:9001"
+                },
+                "npm" : {
+                    "build" : "npm run build"
+                }
+            },
+            "cordova" : {
+                "android" : {
+                    "root" : "F:/App/#package/weiwo-tuoke",
+                    "keystore" : {
+                        "path" : "./weiwo-tuoke.keystore",
+                        "store_password" : "123456",
+                        "password" : "123456",
+                        "alias" : "weiwo"
+                    },
+                    "output" : {
+                        "release" : "./platforms/android/build/outputs/apk/release/android-release.apk",
+                        "debug" : "./platforms/android/build/outputs/apk/debug/android-debug.apk",
+                        "export" : "X:/App/Weiwo/web/public/temp/app/debug/fangyuan/app.apk",
+                        "distribute" : "F:/App/#release/#app/fangyuan.apk"
+                    }
+                }
+            }
+        },
+        {
+            "name" : "微窝外拓",
+            "frontend" : {
+                "root" : "F:/App/waituo-app-vue",
+                "dist" : "./dist",
+                "vcs" : {
+                    "pull" : "git pull",
+                    "checkout" : [
+                        "git reset --hard head",
+                        "git checkout develop"
+                    ]
+                },
+                "conf" : {
+                    "path" : "./src/config/index.js",
+                    "production" : "weiwo.info",
+                    "development" : "192.168.1.2:9001"
+                },
+                "npm" : {
+                    "build" : "npm run build"
+                }
+            },
+            "cordova" : {
+                "android" : {
+                    "root" : "F:/App/#package/weiwo-waituo",
+                    "keystore" : {
+                        "path" : "./weiwo-waituo.keystore",
+                        "store_password" : "123456",
+                        "password" : "123456",
+                        "alias" : "weiwo"
+                    },
+                    "output" : {
+                        "release" : "./platforms/android/build/outputs/apk/release/android-release.apk",
+                        "debug" : "./platforms/android/build/outputs/apk/debug/android-debug.apk",
+                        "export" : "X:/App/Weiwo/web/public/temp/app/debug/waituo/app.apk",
+                        "distribute" : "F:/App/#release/#app/waituo.apk"
+                    }
+                }
+            }
+        }
+    ]
+}
