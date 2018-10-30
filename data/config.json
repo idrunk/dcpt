@@ -25,10 +25,10 @@
                 "android" : {
                     "root" : "F:/App/#package/weiwo-fangchan",
                     "keystore" : {
-                        "path" : "./weiwo-fangchan.keystore",
+                        "path" : "./fangchan.keystore",
                         "store_password" : "123456",
                         "password" : "123456",
-                        "alias" : "weiwo"
+                        "alias" : "fangchan"
                     },
                     "output" : {
                         "release" : "./platforms/android/build/outputs/apk/release/android-release.apk",
@@ -64,10 +64,10 @@
                 "android" : {
                     "root" : "F:/App/#package/weiwo-tuoke",
                     "keystore" : {
-                        "path" : "./weiwo-tuoke.keystore",
+                        "path" : "./fangyuan.keystore",
                         "store_password" : "123456",
                         "password" : "123456",
-                        "alias" : "weiwo"
+                        "alias" : "fangyuan"
                     },
                     "output" : {
                         "release" : "./platforms/android/build/outputs/apk/release/android-release.apk",
@@ -103,10 +103,10 @@
                 "android" : {
                     "root" : "F:/App/#package/weiwo-waituo",
                     "keystore" : {
-                        "path" : "./weiwo-waituo.keystore",
+                        "path" : "./waituo.keystore",
                         "store_password" : "123456",
                         "password" : "123456",
-                        "alias" : "weiwo"
+                        "alias" : "waituo"
                     },
                     "output" : {
                         "release" : "./platforms/android/build/outputs/apk/release/android-release.apk",

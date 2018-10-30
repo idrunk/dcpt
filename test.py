@@ -30,3 +30,14 @@ def glob_one(path):
 print(glob_one(glob_one(r'Y:\Users\drunk\Documents\*') + '/*.ipa'))
 
 print(1 if 0 else 2 if 0 else 3)
+
+import re
+
+groups = re.search(r'^(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:\.(\d+))?$', r'1.4.1.5').groups()
+type = 2
+version = []
+for k, v in enumerate(groups):
+    key = k + 1
+    if v: version.append(v if key < type else '0' if key > type else str(int(v) + 1))
+
+print(".".join(version))

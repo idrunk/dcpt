@@ -29,8 +29,14 @@ class cordova:
 
     def __level_up(self):
         if not self.c['is_level_up']: return
+        part = int(self.c['is_level_up'])
         version = self.version()
-        version_next = re.sub(r'\d+$', lambda matched: str(int(matched.group()) + 1), version)
+        groups = re.search(r'^(\d+)(?:\.(\d+))?(?:\.(\d+))?(?:\.(\d+))?$', version).groups()
+        version_next = []
+        for k, v in enumerate(groups):
+            key = k + 1
+            if v: version_next.append(v if key < part else '0' if key > part else str(int(v) + 1))
+        version_next = '.'.join(version_next)
         xml = re.sub(r'(widget.+?version=")[^"]+', r'\g<1>' + version_next, self.xml) # 升版本
         func.writefile(self.c['xml'], xml)
 

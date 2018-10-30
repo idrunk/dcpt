@@ -40,7 +40,7 @@ def apps():
 
 def app_input(item):
     item['is_build'] = input('是否创建' +item['name']+ '(1/0)[1]:', {0, 1}, 1)
-    if item['is_build']: item['cordova']['is_level_up'] = input('是否升级版本(1/0)[0]:', {0, 1}, 0, '') # 创建才可能更新版本
+    if item['is_build']: item['cordova']['is_level_up'] = input('是否升级版本(3/2/1/0)[0]:', {0, 1, 2, 3}, 0, '') # 创建才可能更新版本
     item['cordova']['platform'] = config['platform']
     item['cordova']['is_debug'] = config['action'] == 2
     item['cordova']['is_export_distribute'] = config['is_export_distribute']
